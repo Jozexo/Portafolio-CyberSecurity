@@ -62,6 +62,11 @@ body, html {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
 header {
     position: fixed;
     top: 0;
