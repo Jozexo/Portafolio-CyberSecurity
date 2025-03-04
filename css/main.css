@@ -5,79 +5,52 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Departure Mono Nerd Font', monospace;
-    line-height: 1.6;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    height: 100%;
+    overflow: hidden;
 }
 
-.header-image {
-    width: 100%; 
-    height: auto; 
-    display: block;
-}
-
-header {
+.video-container {
     position: relative;
-    text-align: center;
-    color: #fff;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
 }
 
-h1 {
-    font-family: 'Departure Mono Nerd Font', monospace;
-    font-size: 3rem;
-    margin: 0;
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre toda la pantalla sin distorsión */
+    z-index: -1; /* Coloca el video detrás del contenido */
 }
 
-header h1 {
+.video-container h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
+    transform: translate(-50%, -50%); /* Centra el título */
     font-family: 'Departure Mono Nerd Font', monospace;
-    margin: 0;
-}
-
-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+    font-size: 4rem;
     color: #fff;
-    text-decoration: none;
+    text-align: center;
+    z-index: 1; /* Coloca el título sobre el video */
 }
 
-section {
-    margin: 20px;
+main {
+    flex: 1; 
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para el footer */
     color: #fff;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
