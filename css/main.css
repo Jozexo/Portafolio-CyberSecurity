@@ -141,6 +141,10 @@ section {
     border-top: 2px solid rgb(0, 255, 21); 
 }
 
+#amenazas p{
+    text-align: center;
+}
+
 section:last-child {
     border-bottom: none;
 }
