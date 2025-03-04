@@ -15,7 +15,7 @@ body, html {
     background-color: #000;
 }
 
-.video-container {
+.video-background {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -32,7 +32,7 @@ body, html {
     z-index: 1;
 }
 
-.title-container {
+.titulo-main {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,14 +41,14 @@ body, html {
     z-index: 1;
 }
 
-.title-container h1 {
+.titulo-main h1 {
     font-size: 4rem;
     margin: 0;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.title-container .frase {
+.titulo-main .frase {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
@@ -57,12 +57,13 @@ body, html {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-.title-container .frase-image {
+.titulo-main .frase-image {
     display: block;
     margin: 20px auto 0;
     width: 200px;
     height: auto;
 }
+
 
 #introduccion {
     border-top: 2px solid rgb(0, 255, 21);
@@ -153,7 +154,7 @@ section h2 {
     line-height: 1.6;
 }
 
-.carousel-container {
+.carrusel-content {
     width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -165,40 +166,40 @@ section h2 {
     scrollbar-color: #00ff15 rgba(255, 255, 255, 0.1);
 }
 
-.carousel-container::-webkit-scrollbar {
+.carrusel-content::-webkit-scrollbar {
     height: 8px;
 }
 
-.carousel-container::-webkit-scrollbar-thumb {
+.carrusel-content::-webkit-scrollbar-thumb {
     background-color: #00ff15;
     border-radius: 4px;
 }
 
-.carousel-container::-webkit-scrollbar-track {
+.carrusel-content::-webkit-scrollbar-track {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.carousel {
+.carrusel {
     display: flex;
     gap: 20px;
     padding: 0 20px;
 }
 
-.carousel-item {
+.carrusel-item {
     scroll-snap-align: start;
     flex: 0 0 auto;
     width: 300px;
     text-align: center;
 }
 
-.carousel-item img {
+.carrusel-item img {
     width: 90%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.carousel-item p {
+.carrusel-item p {
     margin-top: 10px;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
