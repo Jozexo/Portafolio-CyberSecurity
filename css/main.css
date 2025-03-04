@@ -5,20 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Departure Mono Nerd Font';
-    src: url('../fonts/DepartureMonoNerdFont-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Departure Mono Nerd Font';
-    src: url('../fonts/DepartureMonoNerdFont-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
 body {
     font-family: 'Departure Mono Nerd Font', monospace;
     line-height: 1.6;
