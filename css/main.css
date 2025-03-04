@@ -5,20 +5,22 @@
     font-style: normal;
 }
 
+/* Estilos generales */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: auto;
+    font-family: 'Departure Mono Nerd Font', monospace;
+    color: #fff;
+    background-color: #000;
 }
 
 .video-container {
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1;
+    overflow: hidden;
 }
 
 #video-background {
@@ -30,16 +32,21 @@ body, html {
     object-fit: cover;
 }
 
-.video-container h1 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Departure Mono Nerd Font', monospace;
-    font-size: 6rem;
-    color: #fff;
+.title-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    z-index: 1;
+}
+
+.title-container h1 {
+    font-size: 6rem;
+    margin: 0;
 }
 
 header {
@@ -50,7 +57,7 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
-    z-index: 2;
+    z-index: 2; /* Por encima del título y el video */
 }
 
 header nav ul {
@@ -67,26 +74,50 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Departure Mono Nerd Font', monospace;
     font-size: 1.2rem;
 }
 
 main {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    margin-top: 100vh;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 0;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content-item p, .content-item ul {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 footer {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
-    color: #fff;
 }
