@@ -47,6 +47,14 @@ body, html {
     text-transform: uppercase
 }
 
+.title-container .quote {
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    text-align: center; /* Centrado */
+    margin-top: 20px; /* Espacio entre el título y la frase */
+    font-style: italic; /* Texto en cursiva */
+    color: rgba(255, 255, 255, 0.8); /* Color semi-transparente */
+}
+
 header {
     position: fixed;
     top: 0;
@@ -83,11 +91,16 @@ main {
     margin-top: 0;
     margin-left: 20%;
     margin-right: 20%;
+    
 }
 
 section {
     margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(0, 255, 21);
+    
 }
+
 
 section h2 {
     font-size: 2rem;
@@ -125,4 +138,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
