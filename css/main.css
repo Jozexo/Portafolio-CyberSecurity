@@ -34,7 +34,7 @@ body, html {
 
 .title-container {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -47,12 +47,19 @@ body, html {
     text-transform: uppercase
 }
 
-.title-container .quote {
-    font-size: 1.5rem; /* Tamaño de la fuente */
-    text-align: center; /* Centrado */
-    margin-top: 20px; /* Espacio entre el título y la frase */
-    font-style: italic; /* Texto en cursiva */
-    color: rgba(255, 255, 255, 0.8); /* Color semi-transparente */
+.title-container .frase {
+    font-size: 1.5rem; 
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title-container .frase-image {
+    display: block;
+    margin: 20px auto 0; /* Centra la imagen horizontalmente y agrega espacio arriba */
+    width: 200px; /* Ancho de la imagen (ajusta según sea necesario) */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 header {
@@ -98,9 +105,11 @@ section {
     margin-bottom: 60px;
     padding-bottom: 40px;
     border-bottom: 2px solid rgb(0, 255, 21);
-    
 }
 
+section:last-child {
+    border-bottom: none;
+}
 
 section h2 {
     font-size: 2rem;
@@ -133,11 +142,46 @@ section h2 {
     line-height: 1.6;
 }
 
+
+.carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 20px; 
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 300px; 
+    text-align: center; 
+}
+
+.carousel-item img {
+    width: 80%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 footer {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
