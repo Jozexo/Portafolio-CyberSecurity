@@ -1,6 +1,26 @@
+@font-face {
+    font-family: 'Departure Mono Nerd Font';
+    src: url('../fonts/DepartureMonoNerdFont-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Departure Mono Nerd Font';
+    src: url('../fonts/DepartureMonoNerdFont-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Departure Mono Nerd Font';
+    src: url('../fonts/DepartureMonoNerdFont-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Departure Mono Nerd Font', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -16,6 +36,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Departure Mono Nerd Font', monospace;
     margin: 0;
 }
 
