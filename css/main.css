@@ -28,16 +28,39 @@ body {
     color: #333;
 }
 
+.header-image {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    position: relative;
     text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Departure Mono Nerd Font', monospace;
+    font-size: 3rem;
+    margin: 0;
 }
 
 header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
     font-family: 'Departure Mono Nerd Font', monospace;
     margin: 0;
+}
+
+nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 nav ul {
