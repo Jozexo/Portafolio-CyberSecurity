@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div class="video-background">
+    <div class="video-background" id="inicio">
         <video autoplay muted loop id="video-background">
             <source src="../videos/hack.mp4" type="video/mp4">
         </video>
@@ -17,10 +17,11 @@
             <img src="../img/escudo.png" alt="Icono de ciberseguridad" class="frase-image">
         </div>
     </div>
+
     <header>
         <nav>
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#inicio" class="inicio-link">INICIO</a></li>
                 <li><a href="#introduccion">INTRODUCCIÓN</a></li>
                 <li><a href="#amenazas">AMENAZAS</a></li>
                 <li><a href="#proteccion">PROTECCIÓN</a></li>
@@ -188,6 +189,6 @@
             <p>&copy; 2025 Cyberseguridad. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <a href="#video-container" class="back-to-top">↑</a>
+    <a href="#inicio" class="nav-inicio">↑</a>
 </body>
 </html>
