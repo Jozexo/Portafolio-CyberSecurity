@@ -25,4 +25,4 @@ Este proyecto es una página web estática sobre ciberseguridad, diseñada para 
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/Jozexo/Portafolio-CyberSecurity.git
