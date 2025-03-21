@@ -159,6 +159,28 @@
                 </div>
             </div>
         </section>
+
+        <section id="comentarios">
+            <h2>COMENTARIOS Y NOTAS</h2>
+            <form action="submit_comment.php" method="post">
+                <label for="nombreyapellido">Nombre y Apellido:</label>
+                <input type="text" id="nombreyapellido" name="nombreyapellido" required>
+        
+                <label for="usuario">Nombre de Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="nota">Nota:</label>
+                <textarea id="nota" name="nota" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        
+            <div id="comentarios-list">
+            </div>
+        </section>
     </main>
 
     <footer>
