@@ -25,3 +25,9 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+
+$conn->close();
+
+header("Location: ../html/index.html");
+exit();
+?>
