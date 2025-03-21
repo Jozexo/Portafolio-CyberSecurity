@@ -162,9 +162,12 @@
 
         <section id="comentarios">
             <h2>COMENTARIOS Y NOTAS</h2>
-            <form action="submit_comment.php" method="post">
-                <label for="nombreyapellido">Nombre y Apellido:</label>
-                <input type="text" id="nombreyapellido" name="nombreyapellido" required>
+            <form action="php/enviar_comentario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
         
                 <label for="usuario">Nombre de Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>
