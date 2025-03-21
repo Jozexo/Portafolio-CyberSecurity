@@ -12,3 +12,6 @@ if ($conn->connect_error) {
 
 $sql = "SELECT nombre, apellido, usuario, nota, fechanota FROM comentarios ORDER BY fechanota DESC";
 $result = $conn->query($sql);
+
+$sql = "SELECT nombre, apellido, usuario, nota, fechanota FROM comentarios ORDER BY fechanota DESC";
+$result = $conn->query($sql);
