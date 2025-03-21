@@ -19,3 +19,9 @@ $fechanota = date("Y-m-d H:i:s");
 
 $sql = "INSERT INTO comentarios (nombre, apellido, usuario, email, nota, fechanota)
 VALUES ('$nombre', '$apellido', '$usuario', '$email', '$nota', '$fechanota')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Comentario enviado correctamente.";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
