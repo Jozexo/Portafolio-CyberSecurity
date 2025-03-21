@@ -16,3 +16,6 @@ $usuario = $_POST['usuario'];
 $email = $_POST['email'];
 $nota = $_POST['nota'];
 $fechanota = date("Y-m-d H:i:s");
+
+$sql = "INSERT INTO comentarios (nombre, apellido, usuario, email, nota, fechanota)
+VALUES ('$nombre', '$apellido', '$usuario', '$email', '$nota', '$fechanota')";
