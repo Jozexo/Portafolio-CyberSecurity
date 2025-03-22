@@ -3,10 +3,20 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "cybersecurity_comments";
+$conn = "";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli(
+    $servername, 
+    $username, 
+    $password, 
+    $dbname
+);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+
+if ($conn) {
+    echo "Connected to database";
+} else {
+    echo "Connection failed";
 }
+
 ?>
