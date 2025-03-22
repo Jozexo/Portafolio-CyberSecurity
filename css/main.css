@@ -371,3 +371,17 @@ footer {
     text-transform: uppercase;
 }
 
+#comentarios input[type="text"],
+#comentarios input[type="email"],
+#comentarios textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #00ff15;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Departure Mono Nerd Font', monospace;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
