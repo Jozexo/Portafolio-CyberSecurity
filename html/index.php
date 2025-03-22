@@ -162,7 +162,7 @@
 
         <section id="comentarios">
         <h2>COMENTARIOS</h2>
-        <form action="php/enviar_comment.php" method="POST">
+        <form action="../php/enviar_comment.php" method="POST">
             <label for="nombreyapellido">Nombre y Apellido:</label>
             <input type="text" id="nombreyapellido" name="nombreyapellido" required>
     
@@ -179,7 +179,7 @@
         </form>
     
         <div id="comentarios-list">
-            <?php include 'php/cargar_comment.php'; ?>
+            <?php include '../php/cargar_comments.php'; ?>
         </div>
     </section>
 
