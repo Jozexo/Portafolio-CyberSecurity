@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fechanota = date("Y-m-d H:i:s");
 
     $sql = "INSERT INTO comments (nombreyapellido, usuario, email, nota, fechanota)
-    VALUES ('$nombreyapellido', '$usuario', '$email', '$nota', '$fechanota')";
+            VALUES ('$nombreyapellido', '$usuario', '$email', '$nota', '$fechanota')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Comentario enviado con éxito.";
