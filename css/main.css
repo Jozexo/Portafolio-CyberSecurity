@@ -374,7 +374,7 @@ footer {
 #comentarios input[type="text"],
 #comentarios input[type="email"],
 #comentarios textarea {
-    width: calc(100% - 22px);
+    width: calc(100%);
     padding: 10px;
     border: 1px solid #00ff15;
     border-radius: 5px;
