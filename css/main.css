@@ -385,3 +385,11 @@ footer {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
 }
+
+#comentarios input[type="text"]:focus,
+#comentarios input[type="email"]:focus,
+#comentarios textarea:focus {
+    border-color: #00cc12;
+    box-shadow: 0 0 10px rgba(0, 255, 21, 0.5);
+    outline: none;
+}
